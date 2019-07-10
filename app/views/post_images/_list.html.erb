@@ -4,7 +4,7 @@
       <div class="col-md-8 col-sm-offset-2">
         <div class="masonry-wrapper-cols">
           <div class="masonry-gutter"></div>
-         <% @post_images.each do |post_image| %>
+         <% post_images.each do |post_image| %>
             <div class="masonry-block">
               <div class="block block-image v1">
                 <div class="block-image">
@@ -34,7 +34,7 @@
             </div>
 
           <% end %>
-          <%= paginate @post_images, class: "paginate" %>
+          <%= paginate post_images, class: "paginate" %>
           
         </div>
       </div>
